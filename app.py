@@ -8,6 +8,6 @@ def hello_world():
     person = AstrologicalSubject("Person", 1977, 6, 8, 8, 45, "Atlanta")
 
     #Get the information about the person
-    astroInfo = person.sun
+    astroInfo = person.sun.name
     
     return "Sun Sign: " + astroInfo
