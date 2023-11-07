@@ -1,4 +1,6 @@
 from flask import Flask
+from kerykeion import AstrologicalSubject
+
 app = Flask(__name__)
 
 @app.route('/')
