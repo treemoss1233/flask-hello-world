@@ -5,9 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    person = AstrologicalSubject("Person", 1977, 6, 8, 8, 45, "Atlanta")
+    from openai import OpenAI
+    client = OpenAI()
+    
+    empty_thread = openai.beta.threads.create()
+    print(empty_thread)
 
-    #Get the information about the person
-    astroInfo = person.sun.name
     
     return "Sun Sign: " + astroInfo
